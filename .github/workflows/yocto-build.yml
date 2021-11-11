@@ -16,7 +16,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: prepare
-      - run: |
+        run: |
           sudo apt-get install -y \
             build-essential \
             chrpath \
@@ -28,14 +28,14 @@ jobs:
             liblz4-tool
 
       - name: fetch-yocto
-      - run: |
+        run: |
           git clone -b honister git://git.yoctoproject.org/poky.git poky-honister
 
       - name: setup-env
-      - run: |
+        run: |
           cd poky-honister
           source oe-init-build-env
       
       - name: compile
-      - run: |
+        run: |
           bitbake core-image-minimal
