@@ -34,7 +34,7 @@ jobs:
       - name: setup-env
         run: |
           cd poky-honister
-          source oe-init-build-env
+          sudo source oe-init-build-env
       
       - name: compile
         run: |
