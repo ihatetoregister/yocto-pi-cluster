@@ -1,0 +1,34 @@
+name: Manually triggered yocto build
+on:
+  workflow_dispatch:
+    inputs:
+      name:
+        description: 'Person to greet'
+        required: true
+        default: 'Mona the Octocat'
+      home:
+        description: 'location'
+        required: false
+        default: 'The Octoverse'
+
+jobs:
+  say_hello:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          echo "Hello ${{ github.event.inputs.name }}!"
+          echo "- in ${{ github.event.inputs.home }}!"
+  install-deps:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          sudo apt-get install -y \
+            build-essential \
+            chrpath \
+            diffstat \
+            gawk \
+            libncurses5-dev \
+            python3-distutils \
+            texinfo \
+            liblz4-tool
+            
