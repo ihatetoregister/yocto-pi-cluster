@@ -31,4 +31,35 @@ jobs:
             python3-distutils \
             texinfo \
             liblz4-tool
-            
+            install-deps:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          sudo apt-get install -y \
+            build-essential \
+            chrpath \
+            diffstat \
+            gawk \
+            libncurses5-dev \
+            python3-distutils \
+            texinfo \
+            liblz4-tool
+
+    fetch-yocto:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          git clone -b honister git://git.yoctoproject.org/poky.git poky-honister
+
+    setup-env:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          cd poky-honister
+          source oe-init-build-env
+
+    build:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          bitbake core-image-minimal
