@@ -30,12 +30,6 @@ jobs:
       - name: fetch-yocto
         run: |
           git clone -b honister git://git.yoctoproject.org/poky.git poky-honister
-
-      - name: setup-env
-        run: |
           cd poky-honister
-          sudo source oe-init-build-env
-      
-      - name: compile
-        run: |
+          source oe-init-build-env
           bitbake core-image-minimal
