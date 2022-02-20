@@ -1,0 +1,7 @@
+[submodule "meta-clusterctrl"]
+	path = meta-clusterctrl
+	url = https://github.com/ihatetoregister/meta-clusterctrl.git
+[submodule "meta-rpi"]
+	path = meta-rpi
+	url = git://github.com/jumpnow/meta-rpi
+	branch = dunfell
