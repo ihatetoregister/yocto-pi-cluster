@@ -24,7 +24,7 @@ Perform any customization by modifying the [conf/local.conf](conf/local.conf).
 ## Boot and configuration
 The script /usr/sbin/reconfig-clusterctrl should be run at boot. Need to find a way to append this to cmdline.txt. 
 
-    quiet quiet init=/usr/sbin/reconfig-clusterctrl cnat
+    quiet init=/usr/sbin/reconfig-clusterctrl cnat
 
 Also the /boot partition need to be mountable for this script to work. Modified /etc/fstab manually to get this to work. 
 
