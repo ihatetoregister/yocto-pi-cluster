@@ -1,8 +1,12 @@
 # yocto-pi-cluster
-Yocto build for Raspberry Pi with ClusterHAT
+Yocto build for Raspberry Pi with ClusterHAT. 
+
+Read more about ClusterHAT [here](https://clusterhat.com/).
 
 # Guide
-User [this](https://jumpnowtek.com/rpi/Raspberry-Pi-Systems-with-Yocto.html) as a base.
+Use [this](https://jumpnowtek.com/rpi/Raspberry-Pi-Systems-with-Yocto.html) as a base. 
+
+Tested with poky dunfell branch. 
 
 Add dependencies meta-clusterctrl and meta-rpi to the root foler of this project.
 
