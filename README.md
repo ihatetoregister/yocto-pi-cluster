@@ -11,7 +11,7 @@ Fetch this project and use as build directory, use `--recursive` flag to fetch d
     git clone --recursive https://github.com/ihatetoregister/yocto-pi-cluster
 
 ## Customizaion
-Perform any customization by modifying the conf/layer.conf. 
+Perform any customization by modifying the [conf/local.conf](conf/local.conf). 
 
 ## Build
 
