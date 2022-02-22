@@ -1,6 +1,7 @@
 [submodule "meta-clusterctrl"]
 	path = meta-clusterctrl
 	url = git@github.com:ihatetoregister/yocto-pi-cluster.git
+	branch = main
 [submodule "meta-rpi"]
 	path = meta-rpi
 	url = git://github.com/jumpnow/meta-rpi
