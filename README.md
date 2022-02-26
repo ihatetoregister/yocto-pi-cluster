@@ -19,6 +19,9 @@ Perform any customization by modifying the [build/conf/local.conf](/build/conf/l
     $ source poky-dunfell/oe-init-build-env ~/yocto-pi-cluster/build
     $ bitbake console-image
 
+# Github actions
+Tried created automated build using Github Actions but this does not seem feasable due to limits for diskspace and runtime. The yocto build requires about 50 GB and takes a few hours to complete. 
+
 # Todo
 
 ## Boot and configuration
